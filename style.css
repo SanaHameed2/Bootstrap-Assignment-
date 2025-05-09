@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.navbar-icons {
+  gap: 15px;
+}
+
+.navbar-icons a {
+  padding: 0;
+}
+
+.navbar-icons img:hover {
+  opacity: 0.7;
+}
+.hero {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  color: #666;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.collection-section,
+.featured-section {
+  background-color: #e9ecef;
+  padding: 40px 0;
+}
+.promo-banner {
+  background-color: #28a745;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin: 40px 0;
+}
+.promo-banner a {
+  color: white;
+  text-decoration: underline;
+}
+.footer {
+  background-color: #212529;
+  color: white;
+  padding: 40px 0;
+}
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: white;
+}
