@@ -106,7 +106,6 @@ body {
   background-color: #ede0cc;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: none;
 }
 
 .explore-image {
@@ -137,7 +136,12 @@ body {
   height: 200px;
   object-fit: cover;
 }
-
+.latest-arrivals .card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #090909;
+}
 .latest-arrivals a {
   text-decoration: none;
   border-radius: 50px;
@@ -159,11 +163,12 @@ body {
 
 /* Promo Banner */
 .promo-banner {
-  background-color: #28a745;
+  background-color: #08651d;
   color: white;
   padding: 40px;
-  text-align: center;
   margin: 40px 0;
+  border: none;
+  border-radius: 15px;
 }
 
 .promo-banner a {
