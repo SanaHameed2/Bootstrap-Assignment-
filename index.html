@@ -1,134 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Fashion Store</title>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashion Store</title>
 
   <!-- Bootstrap 5.3 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- */ Navbar Section */ -->
-  <nav class="navbar navbar-expand-lg nav-bar py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="#" class="navbar-brand">Fashion Store</a>
-      </div>
 
-      <!-- Hamburger Menu (Mobile) -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg nav-bar py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Fashion Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="menu-icon">☰</span>
       </button>
-
-      <!-- Links & Icons -->
-      <div
-        class="collapse navbar-collapse justify-content-between"
-        id="navbarNav"
-      >
-        <ul class="navbar-nav nav-links ms-auto me-5">
-          <li class="nav-item">
-            <a class="nav-link" href="#">New & Featured</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Men</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Women</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kids</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Accessories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sales</a>
-          </li>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item"><a class="nav-link" href="#">New & Featured</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sales</a></li>
         </ul>
-
-        <div class="nav-icons d-flex align-items-center gap-2">
-          <a class="nav-icon" href="#"><img src="assets/Images/Ecommerce Store Landing Page Icons/🦆 icon _search_.png" alt="Search" width="24"></a>
-          <a class="nav-icon" href="#"><img src="assets/Images/Ecommerce Store Landing Page Icons/🦆 icon _user_.png" alt="Wishlist" width="24"></a>
-          <a class="nav-icon" href="#"><img src="assets/Images/Ecommerce Store Landing Page Icons/🦆 icon _heart outline_.png" alt="User" width="24"></a>
-          <a class="nav-icon" href="#"><img src="assets/Images/Ecommerce Store Landing Page Icons/🦆 icon _cart_.png" alt="Cart" width="24"></a>
+        <div class="d-flex gap-2">
+          <a href="#"><img src="assets/Images/Ecommerce Store Landing Page Icons/🦆 icon _search_.png" alt="Search" width="24" /></a>
+          <a href="#"><img src="assets/Images/Ecommerce Store Landing Page Icons/🦆 icon _user_.png" alt="User" width="24" /></a>
+          <a href="#"><img src="assets/Images/Ecommerce Store Landing Page Icons/🦆 icon _heart outline_.png" alt="Wishlist" width="24" /></a>
+          <a href="#"><img src="assets/Images/Ecommerce Store Landing Page Icons/🦆 icon _cart_.png" alt="Cart" width="24" /></a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- */ Hero Section */ -->
+  <!-- Hero Section -->
   <section class="hero-section text-center">
-    <div class="hero-content">
-      <p class="hero-subtitle">Experience fashion like nevcer before</p>
-      <h1>Elevate Your Style with Fashion Store:<br>Where Fashion Meets Passion</h1>
-      <p>Discover a world of fashion-forward trends curated collections, timeless pieces that inspire,<br>unleash your inner fashionista and embrace style, confidence, elegance and impeccable <br>beauty.</p>
+    <div class="container">
+      <p class="text-muted">Experience fashion like never before</p>
+      <h1 class="fw-bold mb-3">Elevate Your Style with Fashion Store:<br>Where Fashion Meets Passion</h1>
+      <p class="mb-4">Discover a world of fashion-forward trends, curated collections, and timeless pieces that inspire. Embrace style, confidence, elegance, and beauty.</p>
       <a href="#" class="btn btn-outline-primary rounded-pill mb-4">Shop Now</a>
-      <div class="hero-images mb-4">
-        <img src="assets/Images/Ecommerce Store Landing Page images/image-2.png" class="hero-img" alt="Couples">
-        <img src="assets/Images/Ecommerce Store Landing Page images/image-1.png" class="hero-img" alt="Couples">
-        <img src="assets/Images/Ecommerce Store Landing Page images/image-3.png" class="hero-img" alt="Couples">
-        <img src="assets/Images/Ecommerce Store Landing Page images/image.png" class="hero-img" alt="Couples">
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <img src="assets/Images/Ecommerce Store Landing Page images/image-2.png" class="hero-img" alt="Image 1" />
+        <img src="assets/Images/Ecommerce Store Landing Page images/image-1.png" class="hero-img" alt="Image 2" />
+        <img src="assets/Images/Ecommerce Store Landing Page images/image-3.png" class="hero-img" alt="Image 3" />
+        <img src="assets/Images/Ecommerce Store Landing Page images/image.png" class="hero-img" alt="Image 4" />
       </div>
     </div>
   </section>
 
-  <!-- */ Explore Latest Collections Section */ -->
-  <section class="explore-latest-section mt-5">
+  <!-- Explore Section -->
+  <section class="mt-5">
     <div class="container">
       <h2 class="text-center mb-4">Explore Our Latest Collections For You</h2>
-      <div class="row">
-        <!-- Card 1 (Collection For Couples) -->
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/Images/Ecommerce Store Landing Page images/image-4.png" class="explore-image" alt="Couples">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/Images/Ecommerce Store Landing Page images/image-4.png" class="explore-image" alt="Couples" />
             <div class="card-body">
               <h5 class="card-title">Collection For Couples</h5>
-              <p class="card-text">Our Collection For Couple Features coordinated designs and patterns allowing couples to showcase their unity fashion</p>
+              <p class="card-text">Coordinated designs and patterns allowing couples to showcase unity in fashion.</p>
             </div>
           </div>
         </div>
-        <!-- Card 2 (Sheer Bomber Jacket) -->
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/Images/Ecommerce Store Landing Page images/image-6.png" class="explore-image" alt="Jackets">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/Images/Ecommerce Store Landing Page images/image-6.png" class="explore-image" alt="Jacket" />
             <div class="card-body">
               <h5 class="card-title">Sheer Bomber Jacket</h5>
-              <p class="card-text">Introducing our stylish and vibrant sheer jacket, elegantly cropped bomber jacket</p>
+              <p class="card-text">Stylish and vibrant sheer bomber jacket, perfectly cropped for elegance.</p>
               <a href="#" class="btn btn-outline-primary rounded-pill">Shop Now</a>
             </div>
           </div>
         </div>
-        <!-- Card 3 (Leather Watch Collection) -->
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/Images/Ecommerce Store Landing Page images/image-5.png" class="explore-image" alt="Leather">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/Images/Ecommerce Store Landing Page images/image-5.png" class="explore-image" alt="Watch" />
             <div class="card-body">
               <h5 class="card-title">Leather Watch Collection</h5>
             </div>
           </div>
         </div>
-        <!-- Card 4 (New Bags Collection) -->
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/Images/Ecommerce Store Landing Page images/image bag.png" class="explore-image" alt="Bag">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/Images/Ecommerce Store Landing Page images/image bag.png" class="explore-image" alt="Bag" />
             <div class="card-body">
               <h5 class="card-title">New Bags Collection</h5>
             </div>
@@ -138,53 +100,53 @@
     </div>
   </section>
 
-  <!-- */ Latest Arrivals Section */ -->
-  <section class="latest-arrivals mt-5 text-center">
+  <!-- Latest Arrivals -->
+  <section class="mt-5 text-center">
     <div class="container">
-      <h2 class="p-2 mb-4">Latest Arrivals By Categories</h2>
-      <div class="categories-bar d-flex justify-content-center gap-3 mb-4">
-        <a href="#" class="category-link">Shirts</a>
-        <a href="#" class="category-link">Shorts</a>
-        <a href="#" class="category-link">Jackets</a>
-        <a href="#" class="category-link">Hoodies</a>
-        <a href="#" class="category-link">Trousers</a>
-        <a href="#" class="category-link">Shoes</a>
-        <a href="#" class="category-link">Accessories</a>
+      <h2 class="mb-4">Latest Arrivals By Categories</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+        <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Shirts</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Shorts</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Jackets</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Hoodies</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Trousers</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Shoes</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Accessories</a>
       </div>
-      <div class="row flex-nowrap overflow-auto">
-        <div class="col-md-3">
-          <div class="card">
+      <div class="row g-4">
+        <div class="col-md-3 col-6">
+          <div class="card h-100">
             <img src="assets/Images/arrival1.jpg" class="card-img-top" alt="Arrival 1">
             <div class="card-body">
               <h5 class="card-title">Tech T-shirt</h5>
-              <p class="card-text">Tech T-shirt</p>
+              <p class="card-text">Performance comfort</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
+        <div class="col-md-3 col-6">
+          <div class="card h-100">
             <img src="assets/Images/arrival2.jpg" class="card-img-top" alt="Arrival 2">
             <div class="card-body">
               <h5 class="card-title">Levi Stripes</h5>
-              <p class="card-text">H&M T-shirt</p>
+              <p class="card-text">Classic lines</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
+        <div class="col-md-3 col-6">
+          <div class="card h-100">
             <img src="assets/Images/arrival3.jpg" class="card-img-top" alt="Arrival 3">
             <div class="card-body">
               <h5 class="card-title">H&M T-shirt</h5>
-              <p class="card-text">ON T-shirt</p>
+              <p class="card-text">Fresh fits</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
+        <div class="col-md-3 col-6">
+          <div class="card h-100">
             <img src="assets/Images/arrival4.jpg" class="card-img-top" alt="Arrival 4">
             <div class="card-body">
               <h5 class="card-title">Jack & Jones</h5>
-              <p class="card-text">Jack T-shirt</p>
+              <p class="card-text">Urban vibes</p>
             </div>
           </div>
         </div>
@@ -192,95 +154,11 @@
     </div>
   </section>
 
-  <!-- */ Featured Section */ -->
-  <section class="featured-section mt-5">
+  <!-- Featured Section -->
+  <section class="mt-5">
     <div class="container">
-      <h2>Featured</h2>
-      <div class="row mt-4">
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/Images/Ecommerce Store Landing Page images/feature1.png" class="card-img-top" alt="Featured 1">
-            <div class="card-body">
-              <h5 class="card-title">Bottega Veneta<br>Women Exclusive Series</h5>
-              <a href="#" class="btn btn-outline-primary rounded-pill">Shop Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/Images/Ecommerce Store Landing Page images/feature2.png" class="card-img-top" alt="Featured 2">
-            <div class="card-body">
-              <h5 class="card-title">John Lewis<br>Any Day Collections</h5>
-              <a href="#" class="btn btn-outline-primary rounded-pill">Shop Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- */ Promo Banner Section */ -->
-  <section class="promo-banner">
-    <div class="container d-flex align-items-center">
-      <div class="promo-content">
-        <h2>Save 50%<br>this Holiday season</h2>
-        <p>It’s time to revamp your fashion game<br>without breaking the bank! Dive into our<br>exclusive 50% off sale and discover<br>unbeatable deals for the most coveted styles.</p>
-        <a href="#" class="btn btn-outline-primary rounded-pill">Shop Now</a>
-      </div>
-      <div class="promo-image">
-        <img src="assets/Images/Ecommerce Store Landing Page images/image-5.png" alt="Promo Image" class="img-fluid">
-      </div>
-    </div>
-  </section>
-
-  <!-- */ Footer Section */ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h5>Fashion Store</h5>
-          <p>Digital experiences<br>that create more</p>
-        </div>
-        <div class="col-md-3">
-          <h5>Shop</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Discounts</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>Company</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Purpose</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>Support</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Order Status</a></li>
-            <li><a href="#">Shipping & Delivery</a></li>
-            <li><a href="#">Payment</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom d-flex justify-content-between align-items-center mt-4">
-        <p>© 2023 Fashion Store.<br>All rights reserved.</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+      <h2 class="mb-4 text-center">Featured</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div
+ 
