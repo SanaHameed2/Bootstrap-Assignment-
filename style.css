@@ -1,15 +1,14 @@
-/* ================================
-   Base Styles
-================================= */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0; /* Ensures no default margin */
-  padding: 0; /* Ensures no default padding */
+/* Global Styles */
+* {
+  box-sizing: border-box;
 }
 
-/* ================================
-   Navbar
-================================= */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
 .nav-bar {
   background-color: #ddd5c8;
   box-shadow: 2px 2px 5px;
@@ -22,12 +21,12 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 1rem; 
+  gap: 1rem;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #212529; 
+  color: #212529;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -48,22 +47,19 @@ body {
 .nav-icon img {
   width: 24px;
   height: 24px;
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.3s ease;
 }
 
 .nav-icon img:hover {
-  opacity: 0.7; 
+  opacity: 0.7;
 }
 
-/* Hamburger Menu Icon */
 .menu-icon {
   font-size: 1.5rem;
   color: #212529;
 }
 
-/* ================================
-   Hero Section
-================================= */
+/* Hero Section */
 .hero-section {
   background-color: #f8f9fa;
   min-height: 300px;
@@ -90,33 +86,63 @@ body {
   line-height: 1.5;
 }
 
-/* ================================
-   Card Styles
-================================= */
-.card{
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #ede0cc;
+.hero-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.card-img-top {
+.hero-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Explore Latest Collections Section */
+.card {
+  background-color: #ede0cc;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.explore-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  filter: grayscale(100%);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Latest Arrivals Section */
+.latest-arrivals .card-img-top {
   height: 200px;
   object-fit: cover;
 }
 
-/* ================================
-   Collection & Featured Sections
-================================= */
-.collection-section,
-.featured-section {
-  background-color: #e9ecef;
-  padding: 40px 0;
+/* Featured Section */
+.featured-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
-/* ================================
-   Promo Banner
-================================= */
+/* Promo Banner */
 .promo-banner {
   background-color: #28a745;
   color: white;
@@ -130,9 +156,7 @@ body {
   text-decoration: underline;
 }
 
-/* ================================
-   Footer
-================================= */
+/* Footer */
 .footer {
   background-color: #212529;
   color: white;
@@ -148,9 +172,7 @@ body {
   color: white;
 }
 
-/* ================================
-   Responsive Styles
-================================= */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .nav-links {
     gap: 0.5rem;
