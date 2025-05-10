@@ -17,26 +17,12 @@
 </head>
 
 <body>
-
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fashion Store Navbar</title>
-  <!-- Bootstrap 5.3 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Custom Navbar CSS -->
-  <link rel="stylesheet" href="navbar.css" />
-</head>
-<body>
   <!-- ======= Navbar ======= -->
   <nav class="navbar navbar-expand-lg nav-bar py-3">
     <div class="container d-flex justify-content-between align-items-center">
       <!-- Logo -->
-      <div class="logo d-flex gap-2 align-items-center">
-        <img class="icon" src="assets/images/Icon.png" alt="Icon" width="32" />
-        <img src="assets/images/Logo.png" alt="Fashion Store Logo" />
+      <div class="logo">
+        <a href="#" class="navbar-brand">Fashion Store</a>
       </div>
 
       <!-- Hamburger Menu (Mobile) -->
@@ -78,53 +64,125 @@
           </li>
         </ul>
 
-        <div class="nav-buttons d-flex align-items-center gap-2">
-          <a class="nav-icon p-2" href="#"><img src="assets/Images/search.png" alt="Search" width="24"></a>
-          <a class="nav-icon p-2" href="#"><img src="assets/Images/heart.png" alt="Wishlist" width="24"></a>
-          <a class="nav-icon p-2" href="#"><img src="assets/Images/user.png" alt="User" width="24"></a>
-          <a class="nav-icon p-2" href="#"><img src="assets/Images/cart.png" alt="Cart" width="24"></a>
+        <div class="nav-icons d-flex align-items-center gap-2">
+          <a class="nav-icon" href="#"><img src="assets/Images/search.png" alt="Search" width="24"></a>
+          <a class="nav-icon" href="#"><img src="assets/Images/heart.png" alt="Wishlist" width="24"></a>
+          <a class="nav-icon" href="#"><img src="assets/Images/user.png" alt="User" width="24"></a>
+          <a class="nav-icon" href="#"><img src="assets/Images/cart.png" alt="Cart" width="24"></a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Welcome to the Fashion Store</h1>
-      <p>Discover the latest trends and timeless styles for every season.</p>
+  <!-- ======= Hero Section ======= -->
+  <section class="hero-section text-center">
+    <div class="hero-content">
+      <p class="hero-subtitle">Experience fashion like nevcer before</p>
+      <h1>Elevate Your Style with Fashion Store:<br>Where Fashion Meets Passion</h1>
+      <p>Discover a world of fashion-forward trends,<br>curated collections, timeless pieces that inspire,<br>unleash your inner fashionista and embrace<br>style, confidence, elegance and impeccable beauty.</p>
+      <button class="btn btn-primary rounded-pill">Explore Now</button>
     </div>
   </section>
+  <!-- ======= Categories Section ======= -->
+<section class="explore-latest-section">
+  <div class="container">
+    <div class="row">
+      <!-- Landscape Card (Couples) -->
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card landscape-card">
+          <img src="couples-image.jpg" class="card-img-top" alt="Couples">
+          <div class="card-body">
+            <h5 class="card-title">Collection For Couples</h5> <!-- Updated Heading -->
+            <p class="card-text">A collection of stylish couple's outfits.</p>
+            <a href="#" class="btn btn-outline-primary rounded-pill">Shop Now</a>
+          </div>
+        </div>
+      </div>
 
-  <!-- Collection Section -->
-  <section class="collection-section text-center">
+      <!-- Portrait Card (Jackets) -->
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card portrait-card">
+          <img src="jackets-image.jpg" class="card-img-top" alt="Jackets">
+          <div class="card-body">
+            <h5 class="card-title">Jackets</h5>
+            <p class="card-text">Explore our range of warm, stylish jackets.</p>
+            <a href="#" class="btn btn-outline-primary rounded-pill">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Square Card 1 (Leather) -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card square-card leather-card">
+          <img src="leather-image.jpg" class="card-img-top" alt="Leather">
+          <div class="card-body">
+            <h5 class="card-title">Leather</h5>
+            <p class="card-text">Premium leather jackets and accessories.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Square Card 2 (Bag) -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card square-card bag-card">
+          <img src="bag-image.jpg" class="card-img-top" alt="Bag">
+          <div class="card-body">
+            <h5 class="card-title">Bag</h5>
+            <p class="card-text">Shop our collection of elegant bags.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ======= Latest Arrivals Section ======= -->
+  <section class="latest-arrivals text-center">
     <div class="container">
-      <h2>Our Collection</h2>
-      <div class="row mt-4">
-        <div class="col-md-4 mb-4">
+      <h2>Latest Arrivals<br>By Categories</h2>
+      <div class="categories-bar d-flex justify-content-center gap-3 mb-3">
+        <a href="#" class="category-link">Shirts</a>
+        <a href="#" class="category-link">Jackets</a>
+        <a href="#" class="category-link">Hoodies</a>
+        <a href="#" class="category-link">Trousers</a>
+        <a href="#" class="category-link">Shoes</a>
+        <a href="#" class="category-link">Accessories</a>
+      </div>
+      <div class="row flex-nowrap overflow-auto">
+        <div class="col-md-3">
           <div class="card">
-            <img src="assets/Images/collection1.jpg" class="card-img-top" alt="Collection 1">
+            <img src="assets/Images/arrival1.jpg" class="card-img-top" alt="Arrival 1">
             <div class="card-body">
-              <h5 class="card-title">Men's Wear</h5>
-              <p class="card-text">Stylish and comfortable men's fashion.</p>
+              <h5 class="card-title">Levi Stripes</h5>
+              <p class="card-text">Levi T-shirt</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-3">
           <div class="card">
-            <img src="assets/Images/collection2.jpg" class="card-img-top" alt="Collection 2">
+            <img src="assets/Images/arrival2.jpg" class="card-img-top" alt="Arrival 2">
             <div class="card-body">
-              <h5 class="card-title">Women's Wear</h5>
-              <p class="card-text">Elegant outfits for every occasion.</p>
+              <h5 class="card-title">H&M T-shirt</h5>
+              <p class="card-text">H&M T-shirt</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-3">
           <div class="card">
-            <img src="assets/Images/collection3.jpg" class="card-img-top" alt="Collection 3">
+            <img src="assets/Images/arrival3.jpg" class="card-img-top" alt="Arrival 3">
             <div class="card-body">
-              <h5 class="card-title">Accessories</h5>
-              <p class="card-text">Complete your look with the right accessories.</p>
+              <h5 class="card-title">ON T-shirt</h5>
+              <p class="card-text">ON T-shirt</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/Images/arrival4.jpg" class="card-img-top" alt="Arrival 4">
+            <div class="card-body">
+              <h5 class="card-title">Jack & Jones</h5>
+              <p class="card-text">Jack T-shirt</p>
             </div>
           </div>
         </div>
@@ -132,44 +190,26 @@
     </div>
   </section>
 
-  <!-- Featured Section -->
+  <!-- ======= Featured Section ======= -->
   <section class="featured-section text-center">
     <div class="container">
-      <h2>Featured Products</h2>
+      <h2>Featured</h2>
       <div class="row mt-4">
-        <div class="col-md-3 mb-4">
+        <div class="col-md-6 mb-4">
           <div class="card">
             <img src="assets/Images/featured1.jpg" class="card-img-top" alt="Featured 1">
             <div class="card-body">
-              <h5 class="card-title">Denim Jacket</h5>
-              <p class="card-text">$59.99</p>
+              <h5 class="card-title">Bottega Veneta<br>Women Exclusive Series</h5>
+              <p class="card-text"><a href="#" class="feature-link">Shop Now</a></p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 mb-4">
+        <div class="col-md-6 mb-4">
           <div class="card">
             <img src="assets/Images/featured2.jpg" class="card-img-top" alt="Featured 2">
             <div class="card-body">
-              <h5 class="card-title">Casual Shoes</h5>
-              <p class="card-text">$39.99</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="assets/Images/featured3.jpg" class="card-img-top" alt="Featured 3">
-            <div class="card-body">
-              <h5 class="card-title">Summer Dress</h5>
-              <p class="card-text">$49.99</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="assets/Images/featured4.jpg" class="card-img-top" alt="Featured 4">
-            <div class="card-body">
-              <h5 class="card-title">Leather Bag</h5>
-              <p class="card-text">$89.99</p>
+              <h5 class="card-title">John Lewis<br>- Any Dry Collections</h5>
+              <p class="card-text"><a href="#" class="feature-link">Shop Now</a></p>
             </div>
           </div>
         </div>
@@ -177,24 +217,68 @@
     </div>
   </section>
 
-  <!-- Promo Banner -->
+  <!-- ======= Promo Banner ======= -->
   <section class="promo-banner">
-    <div class="container">
-      <h2>Limited Time Offer!</h2>
-      <p>Get up to 50% off on select items. <a href="#">Shop Now</a></p>
+    <div class="container d-flex align-items-center">
+      <div class="promo-content">
+        <h2>Save 50%<br>this Holiday season</h2>
+        <p>It’s time to revamp your fashion game<br>without breaking the bank! Dive into our<br>exclusive 50% off sale and discover<br>unbeatable deals for the most coveted styles.</p>
+        <button class="btn btn-primary">Shop Now</button>
+      </div>
+      <div class="promo-image">
+        <img src="assets/Images/promo.jpg" alt="Promo Image" class="img-fluid">
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer text-center">
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Fashion Store. All rights reserved.</p>
-      <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Fashion Store</h5>
+          <p>Digital experiences<br>that create more</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Shop</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Discounts</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Purpose</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex justify-content-between align-items-center mt-4">
+        <p>© 2023 Fashion Store.<br>All rights reserved.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
     </div>
   </footer>
 
   <!-- Bootstrap Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
