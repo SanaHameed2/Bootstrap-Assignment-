@@ -8,20 +8,55 @@ body {
 /* ================================
    Navbar
 ================================= */
-.navbar {
-  background-color: #ddd5c8;
+
+.nav-bar {
+  background-color: #ddd5c8; /
 }
 
-.navbar-icons {
-  gap: 15px;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.navbar-icons a {
-  padding: 0;
+.nav-links {
+  display: flex;
+  gap: 1rem; 
 }
 
-.navbar-icons img:hover {
-  opacity: 0.7;
+.nav-links a {
+  text-decoration: none;
+  color: #212529; 
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4caf4f;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  text-decoration: none;
+}
+
+.nav-icon img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease; 
+}
+
+.nav-icon img:hover {
+  opacity: 0.7; 
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  font-size: 1.5rem;
+  color: #212529;
 }
 
 /* ================================
@@ -98,3 +133,18 @@ body {
 .footer a:hover {
   color: white;
 }
+
+/* ================================
+   Responsive Styles
+================================= */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-icons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
