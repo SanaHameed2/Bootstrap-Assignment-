@@ -1,56 +1,48 @@
-/* Global Styles */
+/* Universal Box Sizing */
 * {
   box-sizing: border-box;
 }
 
+/* Body and Fonts */
 body {
   margin: 0;
   font-family: "Geist", sans-serif;
 }
 
-p {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-}
-
-.btn:hover {
-  background-color: #4caf4f;
-}
-/* Headings */
-h1, h2{
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  color: #212529;
-}
-/* Apply Geist to all paragraphs */
-p {
-  font-family: 'Geist', sans-serif;
-  font-size: 2rem; /* Slightly larger */
+/* Paragraph Styling (Enhanced Readability) */
+p,
+.card-text,
+.hero-content p,
+.promo-content p {
+  font-family: "Geist", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-/* Center section headings */
+/* Headings */
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  color: #212529;
+}
+
 h2 {
   text-align: center;
   margin: 2rem 0;
 }
 
-/* Add vertical space for all buttons */
+/* Buttons */
 .btn {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-/* Optional: More padding in card bodies for clean spacing */
-.card-body {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-/* Buttons */
-.btn {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+.btn:hover {
+  background-color: #4caf4f;
 }
 
 /* Navbar */
@@ -62,6 +54,7 @@ h2 {
 .logo {
   font-family: "Playfair Display", serif;
   font-weight: 900;
+  font-size: 1.8rem;
 }
 
 .links {
@@ -126,47 +119,36 @@ h2 {
   margin-bottom: 15px;
 }
 
-.hero-content p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
+/* Carousel */
+
+.carousel-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
-
-
-
-/* Card Styles (Unified) */
+/* Explore Section*/
 .card {
   border-radius: 10px;
   border: 2px solid #090909;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #f8f9fa;
+  overflow: hidden;
 }
 
 .card-img-top {
   width: 100%;
-  height: 180px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+  object-position: center;
 }
 
-.explore .card-img-top {
-  position: relative;
-}
-
-.explore .card-img-top::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  mix-blend-mode: multiply;
-  border-radius: 10px 10px 0 0;
+.card.card-fixed-height {
+  min-height: 420px;
 }
 
 .card-body {
-  padding: 15px;
+  padding: 1.5rem;
   position: relative;
 }
 
@@ -177,10 +159,11 @@ h2 {
 
 .card-text {
   color: #666;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
+/* Shopping Bag Icon */
 .bag-icon {
   position: absolute;
   top: 15px;
@@ -211,17 +194,17 @@ h2 {
 
 /* Featured Section */
 .featured {
-  margin-top: 80px;
+  margin-top: 4rem;
 }
 
-/* Promo Banner Enhanced */
+/* Promo Banner Section */
 .promo {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   max-width: 1100px;
-  margin: 80px auto;
+  margin: 80px auto 5rem auto;
   background-color: #303812;
   border-radius: 10px;
   overflow: hidden;
@@ -243,22 +226,20 @@ h2 {
   flex: 1 1 50%;
   padding: 30px;
   box-sizing: border-box;
-  text-align: left;
+  text-align: center;
 }
 
 .promo-content h2 {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   margin-bottom: 15px;
-  color:white;
-  text-align: left;
+  color: white;
 }
 
 .promo-content p {
-  font-size: 1rem;
-  margin-bottom: 20px;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
   color: white;
-  font-family: "Geist", sans-serif;
 }
 
 .promo-btn {
@@ -278,9 +259,10 @@ h2 {
   background-color: white;
   color: #212529;
 }
+
 /* Footer */
 .footer {
-  background-color: #212529;
+  background-color: rgb(33, 37, 41);
   color: #ccc;
   padding: 30px 0;
 }
@@ -318,34 +300,50 @@ h2 {
   }
 
   .hero-content p {
-    font-size: 0.9rem;
-  }
-
-  .hero-imgs {
-    flex-wrap: wrap;
-  }
-
-  .hero-img {
-    width: 120px;
-    height: 120px;
+    font-size: 1rem;
   }
 
   .promo {
-    padding: 15px;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .promo-content {
+    text-align: center;
+  }
+
+  .promo-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card.card-fixed-height {
+    min-height: auto;
+  }
+
+  .small-carousel-img {
+    height: 220px;
   }
 }
 
 @media (max-width: 576px) {
-  .hero-img {
-    width: 100px;
-    height: 100px;
-  }
-
   .hero-content h1 {
     font-size: 1.5rem;
   }
 
   .hero-content p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .promo-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .promo-content p {
+    font-size: 1rem;
+  }
+
+  .small-carousel-img {
+    height: 180px;
   }
 }
