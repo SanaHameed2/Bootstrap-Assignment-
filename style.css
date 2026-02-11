@@ -187,9 +187,17 @@ h2 {
   font-weight: 500;
 }
 
-.arrivals .category:hover {
-  background-color: #ddd5c8;
-  color: #020202;
+.arrivals .card,
+.explore .card,
+.featured .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arrivals .card:hover,
+.explore .card:hover,
+.featured .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* Featured Section */
